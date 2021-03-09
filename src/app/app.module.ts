@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchComponent } from './search/search.component';
 import { SearchResultsComponent } from './search-results/search-results.component';
 import { ShowInfoComponent } from './show-info/show-info.component';
+import { WatchlistComponent } from './watchlist/watchlist.component';
+import { ShowDetailsComponent } from './show-details/show-details.component';
 
 
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -15,6 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {FormsModule} from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import {MatCardModule} from '@angular/material/card';
     HeaderComponent,
     SearchComponent,
     SearchResultsComponent,
-    ShowInfoComponent
+    ShowInfoComponent,
+    WatchlistComponent,
+    ShowDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,8 @@ import {MatCardModule} from '@angular/material/card';
     MatButtonModule,
     MatIconModule,
     FormsModule,
-    MatCardModuleg
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
