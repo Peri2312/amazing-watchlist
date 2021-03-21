@@ -4,6 +4,8 @@ import {DummyService} from '../services/dummy.service';
 
 @Component({
   selector: 'app-search-results',
+
+
   templateUrl: './search-results.component.html',
   styleUrls: ['./search-results.component.css']
 })
