@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import { Show } from '../model/show.model';
+import { Component, OnInit, Input } from '@angular/core';
+import { Show } from '../models/show.model';
 
 @Component({
   selector: 'app-show-info',
@@ -7,8 +7,10 @@ import { Show } from '../model/show.model';
   styleUrls: ['./show-info.component.css']
 })
 export class ShowInfoComponent implements OnInit {
-  @Input()show: Show;
-  constructor() {}
+  @Input() show: Show;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Show} from '../model/show.model';
+import {Show} from '../models/show.model';
 import {DummyService} from '../services/dummy.service';
 import {ActivatedRoute} from '@angular/router';
 

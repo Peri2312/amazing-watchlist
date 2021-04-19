@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import { Episode } from '../model/episode.model';
-import { Show } from '../model/show.model';
+import { Episode } from '../models/episode.model';
+import { Show } from '../models/show.model';
 import {ActivatedRoute} from '@angular/router';
 import {DummyService} from '../services/dummy.service';
 import {MatTableDataSource} from '@angular/material/table';
@@ -26,7 +26,7 @@ export class ShowDetailsComponent implements OnInit {
   }
 
   applyFilter(e: Event): void {
-    const filterValue = (event.target as HTMLInputElement).value;
+    const filterValue = (e.target as HTMLInputElement).value;
     this.episodes.filter = filterValue.trim().toLowerCase();
   }
 
