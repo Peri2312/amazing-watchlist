@@ -15,6 +15,6 @@ export class Episode {
     this.airDate = (episodeInfo.airdate) ? new Date(episodeInfo.airdate) : new Date(0);
     this.summary = (episodeInfo.summary) ? episodeInfo.summary : 'TBD';
     this.fullNumber = `S${(Number(episodeInfo.season) > 9) ? episodeInfo.season : '0' + episodeInfo.season }` +
-      `E${(Number(episodeInfo.number) > 9) ? episodeInfo.number : '0' + episodeInfo.number }`;
+                      `E${(Number(episodeInfo.number) > 9) ? episodeInfo.number : '0' + episodeInfo.number }`;
   }
 }
